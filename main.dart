@@ -211,4 +211,49 @@ void main() {
 
   //25
 
+    List<String> nomes = ['Hugo', 'Robert', 'Matheus', 'Eduardo'];
+
+  for (var nome in nomes) {
+    print(nome.toUpperCase());
+  }
+
+  //26
+
+  double calcularAreaRetangulo(double base, double altura) {
+  return base * altura;
+}  
+
+  print(calcularAreaRetangulo(5, 3));
+
+  //27
+
+  void apresentarPessoa(String nome, [int? idade]) {
+  if (idade != null) {
+    print('Nome: $nome, Idade: $idade');
+  } else {
+    print('Nome: $nome');
+  }
+}
+
+  apresentarPessoa('Eduardo'); 
+  apresentarPessoa('Eduardo', 22);  
+
+  //28
+
+  void enviarEmail(String destinatario, {String assunto = 'Sem assunto', String corpo = 'Mensagem vazia'}) {
+  print('Enviando email para: $destinatario');
+  print('Assunto: $assunto');
+  print('Corpo: $corpo');
+}
+
+  enviarEmail('eduardo@email.com');
+  enviarEmail('contato@email.com', assunto: 'Reunião', corpo: 'Confirmar presença.');
+
+  //29
+
+  
+
+
+
+
 }
